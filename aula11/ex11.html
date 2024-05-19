@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>teste de if e else</h1>
+    <label for="txtnac">Nacionalidade</label>
+    <input type="text" name="txt" id="txtnac">
+    <input type="button" value="enviar" onclick="calc()">
+    <div id="res"></div>
+    <script>
+        function calc() {
+      var nac = document.getElementById('txtnac')
+      var res = document.getElementById('res')
+      var resp = (nac.value)
+      if ( resp == 'estadunidense') {
+        res.innerHTML = 'nativo'
+      }
+      else {
+        res.innerHTML = 'estrangeiro'
+      } }
+    </script>
+</body>
+</html>
