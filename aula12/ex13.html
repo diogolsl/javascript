@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <h1>teste horas</h1>
+    <div id="demo"></div>
+    <script>
+        const hora = new Date().getHours()
+        let bv
+        if (hora < 12){
+        bv = 'bom dia'
+        }
+        else if (hora < 18){
+            bv = 'boa tarde'
+        }
+        else{
+            bv = 'boa noite'
+        }
+        document.getElementById("demo").innerHTML = bv
+    </script>
+</body>
+</html>
